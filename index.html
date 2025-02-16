@@ -182,6 +182,28 @@
     li:not(impr-list:first-child) {
       margin-top: 0.1rem;
     }
+    .zoom-link {
+      display: inline-block; /* Ensures the border wraps the text */
+      padding-left: 5px;
+      padding-right: 4.5px;
+      padding-top: 0px;
+      padding-bottom: 1.5px;
+      border-radius: 3px; /* Rounds the corners */
+      text-decoration: none;
+      margin-bottom: -5px;
+      color: #fcfffa;
+      background-color: #94a8cf;
+      vertical-align: 0.55px;
+      font-size: 0.75rem;
+      word-spacing: -0.2rem;
+    }
+    .zoom-text {
+      font-family: "Source Sans 3";
+      text-transform: lowercase;
+      font-weight: 400;
+      font-size: 0.85rem;
+      letter-spacing: 0.01rem;
+    }
     @media (min-width: 550px) {
       .container {
         width: 500px;
@@ -220,7 +242,8 @@
     <div class="schedule">
       <table style="margin-top: 0.8rem; margin-left: -0.05rem; width: 99%">
         <tr> <td class="time"> Február <span class="room">25. 16:30</span> </td> <td class="link-to-details"><a class="link-text" href="talalkozok/2025-02-25-lagos-matyas.html">részletek ➚</a></td> </tr>
-        <tr class="place-row"> <td colspan="2" style="line-height: 0.95rem; padding-bottom: 0.25rem"> <span class="nytk-name-full"> Nyelvtudományi Kutatóközpont</span><span class="nytk-name-short"> Nytud. Kutközp.</span> <span class="room">fszt. 013</span> </td> </tr>
+        <tr class="place-row"> <td colspan="2" style="line-height: 0.95rem; padding-bottom: 0.25rem"> <span class="nytk-name-full"> HUN-REN Nyelvtudományi Kutatóközpont</span><span class="nytk-name-short"> HUN-REN Nytud. Kutközp.</span> </td> </tr>
+        <tr class="place-row"> <td colspan="2" style="line-height: 0.95rem; padding-bottom: 0.25rem"> Földszinti nagyelőadó (013) <a class="zoom-link" href="https://us06web.zoom.us/j/85250575838?pwd=M21okObuBY0UjWZgED4b18ms2O4JXr.1"><span class="zoom-text">zoom</span> ➚</a></td> </tr>
         <tr class="presenter-row"> <td colspan="2"> Lagos Mátyás (NYTK) </td> </tr>
         <tr class="title-row"> <td colspan="2"> Mondatok nyelvtani elemzése rekurzív analógiakereséssel </td> </tr>
       </table>
