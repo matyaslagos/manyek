@@ -267,6 +267,30 @@
       font-size: 0.85rem;
       letter-spacing: 0.01rem;
     }
+    .slides-text {
+      font-family: "Source Sans 3";
+      text-transform: lowercase;
+      font-weight: 400;
+      font-size: 0.9rem;
+      letter-spacing: 0.01rem;
+    }
+    .slides-link {
+      display: inline-block; /* inline-block */
+      margin-left: auto;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 1.5px;
+      line-height: 1.2;
+      border-radius: 3px;
+      text-decoration: none;
+      color: #3A3A3B;
+      background-color: #ecece1;
+      vertical-align: 0px;
+      font-size: 0.75rem;
+      word-spacing: 0.1rem;
+      text-align: right;
+      margin-bottom: 0px;
+    }
   </style>
 </head>
 <body>
@@ -286,7 +310,7 @@
       </table>
     </div>
     
-    <h2 style="margin-top: 1.2rem"> Absztrakt </h2>
+    <h2 style="margin-top: 1.2rem; display: flex"> Absztrakt <a class="slides-link" href="diasorok/2025-02-25-lagos-matyas.pdf"><span class="slides-text">diasor </span>➚</a> </h2>
     <div class="abstract">
     <p> Vegyünk egy (annotálatlan) korpuszt és egy olyan mondatot ami nem szerepel ebben a korpuszban. Az előadás arról szól hogy hogyan lehet a korpuszban előforduló mondatok alapján nyelvtani szerkezetet rendelni az új mondathoz. A módszerem megpróbálja minden lehetséges módon felbontani az új mondatot két összetevőre, és ezekre az összetevőkre keres rekurzívan – tehát őket is felbontva összetevőkre stb. – olyan nyelvtanilag analóg frázisokat amik előfordultak a korpuszban. </p>
     <p> Például: ha a <em>my cat jumped on the table</em> mondat nem fordult elő a korpuszban, akkor a módszernek meg kéne találnia
