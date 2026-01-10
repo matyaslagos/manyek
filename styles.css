@@ -475,6 +475,7 @@ a .svg-logo:hover {
 /* Abstract section styling */
 .abstract {
   hyphens: manual;
+  line-height: 1.35rem;
 }
 
 .abstract-heading {
