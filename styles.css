@@ -275,7 +275,7 @@ a {
 }
 
 .link-button.details {
-  padding: 0rem 0.36rem 0rem 0.3rem;
+  padding: 0rem 0.3rem 0rem 0.3rem;
   color: var(--color-button-details-text);
   background-color: var(--color-button-details-bg);
   border: 1pt solid var(--color-button-details-border);
@@ -305,7 +305,7 @@ a {
   font-weight: 400;
   font-size: 0.85rem;
   letter-spacing: 0.01rem;
-  vertical-align: -0.2pt;
+  vertical-align: 0pt;
   word-spacing: -0.2rem;
 }
 
