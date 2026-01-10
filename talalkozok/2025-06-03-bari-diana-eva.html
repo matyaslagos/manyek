@@ -1,330 +1,65 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-  <title>MANYEK</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bari Diána Éva előadása a MANYEK-en: Panelek, konstrukciók és nyelvi kompetencia német nyelvvizsgázói szövegekben">
+  <title>Bari Diána Éva - MANYEK</title>
+  <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-    body {
-      font-family: Verdana, sans-serif;
-      font-size: 16px;
-      color: #3A3A3B;
-      text-align: left;
-      line-height: 1.25em;
-      margin: 0;
-      padding: 0;
-      hyphens: auto;
-      background: #fcfffa;
-    }
-    .container {
-      width: 90%;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .svg-logo {
-      width: 225px;
-      height: 68.88px;
-      margin: 1rem auto 0rem 0rem;
-      display: block;
-      opacity: 0.7;
-    }
-    .svg-logo:hover {
-      opacity: 1;
-    }
-    .text-logo {
-      font-size: 2.3rem;
-      font-weight: normal;
-      font-family: "Trebuchet MS";
-      margin-top: 1.9rem;
-      margin-bottom: 0.1rem;
-      margin-left: 0.07rem;
-    }
-    .tracked-m {
-      letter-spacing: 0.1rem;
-    }
-    .subtitle {
-      font-size: 0.9rem;
-      font-family: "Andale Mono";
-      line-height: 1rem;
-      word-spacing: -0.2rem;
-    }
-    .link-text-old {
-      font-family: "PT Sans", monospace;
-      text-transform: lowercase;
-      font-style: normal;
-      letter-spacing: 0.01rem;
-      font-size: 0.95rem;
-      line-height: 0.95rem;
-      font-weight: normal;
-      color: #3A3A3B;
-      background: #ecece1;
-      text-decoration: none;
-      border-radius: 3px;
-      padding: 0.0rem 0.28rem 0.05rem 0.3rem;
-    }
-    .link-text {
-      font-family: "Source Sans 3", monospace;
-      text-transform: lowercase;
-      font-style: normal;
-      letter-spacing: 0.01rem;
-      font-size: 0.95rem;
-      line-height: 0.95rem;
-      font-weight: normal;
-      color: #3A3A3B;
-      background: #ecece1;
-      text-decoration: none;
-      border-radius: 3px;
-      padding: 0.0rem 0.37rem 0.0rem 0.4rem;
-    }
-    h2 {
-      font-family: "Source Sans 3", Verdana, sans-serif;
-      text-align: left;
-      font-size: 1.15rem;
-      font-weight: 550;
-      margin-top: 1.8rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      margin-top: 0.47rem;
-      margin-bottom: 0;
-    }
-    .container p:first-child {
-      margin-top: 0;
-    }
-    img.logo {
-      width: 250px;
-      height: 96.58px;
-      display: block;
-      margin: 30px auto 40px 0rem;
-    }
-    img.top-hun-ren-nytk-logo {
-      width: 150px;
-      height: 23.7px;
-      margin: 0rem auto 0.5rem 0rem;
-      display: inline;
-      opacity: 0.7;
-    }
-    img.top-elte-ik-logo {
-      width: 125px;
-      /*height: 23.7px;*/
-      margin: 0.2rem 0rem 0.5rem auto;
-      display: inline;
-      opacity: 0.7;
-    }
-    img.hun-ren-nytk-logo {
-      width: 200px;
-      height: 31.6px;
-      margin: 3rem auto 0rem auto;
-      display: block;
-    }
-    img.elte-ik-logo {
-      width: 185px;
-      height: 51.98px;
-      padding-right: 0.6rem;
-      margin: 1rem auto 4rem auto;
-      display: block;
-    }
-    .schedule-item {
-      margin-top: 1em;
-    }
-    i {
-      font-size: 1rem;
-    }
-    .nytud-desktop {
-      font-size: 0.95em;
-      margin-top: -0.1em;
-      color: #888888;
-      letter-spacing: 0.2pt;
-      font-family: "Source Code Pro", monospace;
-      font-weight: 450;
-      display: none;
-    }
-    .nytud-mobile {
-      font-size: 0.95em;
-      color: #888888;
-      letter-spacing: 0.2pt;
-      font-family: "Source Code Pro", monospace;
-      font-weight: 450;
-      word-spacing: -0.3em;
-      display: inline;
-    }
-    .room {
-      word-spacing: -0.4em;
-    }
-    .room-2 {
-      word-spacing: -0.2em;
-    }
-    .time {
-      text-transform: uppercase;
-      color: #99374d;
-      font-size: 0.95rem;
-      letter-spacing: 0.02rem;
-      font-family: "Source Code Pro", monospace;
-      font-weight: 425;
-      word-spacing: -0.1rem;
-    }
-    .place-row {
-      color: #515154;
-      font-family: "Source Code Pro", monospace;
-      font-size: 0.95rem;
-      font-weight: 425;
-      word-spacing: -0.1rem;
-    }
-    .presenter {
-      font-family: "PT Sans";
-      font-size: 1.18rem;
-      line-height: 1.1rem;
-      font-weight: bold;
-    }
-    .title {
-      font-family: "PT Sans";
-      font-size: 1.24rem;
-      padding-top: 0.2em;
-      padding-bottom: 0.6rem;
-    }
-    .title-row {
-      font-style: italic;
-      line-height: 1.15;
-    }
-    .nytk-name-full {
-      display: none;
-    }
-    .nytk-name-short {
-      display: inline;
-      /* word-spacing: -0.3rem; */
-    }
-    .link-to-details {
-      text-align: right;
-    }
-    table, th, td {
-    border: 0px solid black;
-    border-collapse: collapse;
-    }
-    .single-schedule {
-      margin-top: 2rem;
-    }
-    .inline-list {
-      margin-top: 0.15rem;
-      margin-bottom: 0.15rem;
-      margin-left: -0.5rem;
-    }
-    li:not(inline-list:first-child) {
-      margin-top: 0.075rem;
-    }
-    .keywords {
-      font-family: "Source Sans 3", Verdana, sans-serif;
-      text-align: left;
-      font-size: 1.15rem;
-      font-weight: 550;
-      margin-top: 1.8rem;
-      margin-bottom: 0.5rem;
-    }
-    .abstract {
-      hyphens: manual;
-    }
-    .rec-literature {
-      hyphens: manual;
-    }
-    a {
-      color: #2f4db5;
-    }
-    @media (min-width: 550px) {
-      .container {
-        width: 500px;
-      }
-      .nytk-name-full {
-        display: inline;
-      }
-      .nytk-name-short {
-        display: none;
-      }
-      .abstract {
-        hyphens: auto;
-      }
-    }
-    .zoom-link {
-      display: inline-block; /* inline-block */
-      padding-left: 5px;
-      padding-right: 4px;
-      padding-top: 2px;
-      padding-bottom: 2.5px;
-      border-radius: 3px;
-      text-decoration: none;
-      margin-bottom: -5px;
-      margin-top: -1px;
-      color: #fcfffa;
-      background-color: #88a0cf;
-      vertical-align: 0.55px;
-      font-size: 0.75rem;
-      word-spacing: -0.2rem;
-    }
-    .zoom-text {
-      font-family: "Source Sans 3";
-      text-transform: lowercase;
-      font-weight: 400;
-      font-size: 0.85rem;
-      letter-spacing: 0.01rem;
-    }
-    .slides-text {
-      font-family: "Source Sans 3";
-      text-transform: lowercase;
-      font-weight: 400;
-      font-size: 0.9rem;
-      letter-spacing: 0.01rem;
-    }
-    .slides-link {
-      display: inline-block; /* inline-block */
-      margin-left: auto;
-      padding-left: 5px;
-      padding-right: 5px;
-      padding-top: 1.5px;
-      line-height: 1.2;
-      border-radius: 3px;
-      text-decoration: none;
-      color: #3A3A3B;
-      background-color: #ecece1;
-      vertical-align: 0px;
-      font-size: 0.75rem;
-      word-spacing: 0.1rem;
-      text-align: right;
-      margin-bottom: 0px;<a href="2025-03-25-indig-balazs.html" id="" title="2025-03-25-indig-balazs">2025-03-25-indig-balazs</a>
-    }
-    .indir-ref {
-      color: #808080;
-    }
-  </style>
 </head>
 <body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Ugrás a tartalomra</a>
+
   <div class="container">
-    
-    <a href="../index.html"><img class="svg-logo" src="https://live.staticflickr.com/65535/54315829312_672db8e0ee_o.png" alt="MANYEK logó"></a>
-    
-    <div class="single-schedule">
-      <table style="margin-top: 0.8rem; margin-left: -0.05rem; width: 100%">
-        <tr class="presenter-row"> <td colspan="2" class="presenter"> Bari Diána Éva (ELTE BTK, Euroexam Vizsgaközpont) </td> </tr>
-        <tr class="title-row"> <td colspan="2" class="title"> Panelek, konstrukciók és nyelvi kompetencia német nyelvvizsgázói szövegekben </td> </tr>
-        <tr> <td class="time"> <span class="room">2025. </span>Június <span class="room">3. 16:30</span> </td> </tr>
-        <tr class="place-row"> <td colspan="2" style="line-height: 0.95; padding-bottom: 0.25rem"> <span class="nytk-name-full"> HUN-REN Nyelvtudományi Kutatóközpont</span><span class="nytk-name-short"> HUN-REN Nyelvtudományi Kutatóközpont</span> </td> </tr>
-        <tr class="place-row"> <td colspan="2" style="line-height: 0.95; padding-bottom: 0.25rem"> Földszinti nagyelőadó (013) </td> </tr>
-        <tr class="place-row"> <td colspan="2" style="line-height: 0.95; padding-bottom: 0.25rem"> <a style="color: #2f4db5e6" href="https://maps.app.goo.gl/yBxHQT2R15VB7mFZ7">1068 <span class="room-2">Budapest, Benczúr</span> utca 33.</a></td> </tr>
-      </table>
-    </div>
-    
-    <h2 style="margin-top: 1.2rem; display: flex"> Absztrakt </h2>
-    <div class="abstract">
-      <p>A német nyelvvizsgaszövegek értékelése során gyakran megfigyelhető, hogy a vizsgázók nyelvhasználata nagymértékben előre betanult panelekre épülő, merev mintázatokat követ. A kommunikatív célhoz illeszkedő konstrukciók önálló alkalmazása jellemzően hiányzik, amelynek következtében a nyelvi produkció alacsony szintű. Amennyiben a vizsgázók mégis eltérnek a bevett panelek használatától, a hibaszámuk érdemben megnövekszik, ami a nyelvi teljesítmény romlásához vezet, és az adott szinten elvárt nyelvi kompetencia kritériumainak nem teljesítéséhez.</p>
-      <p>Előadásomban egy országos lefedettségű, egységes feladatstruktúrával készült vizsgakorpusz létrehozásának és feldolgozásának tapasztalatait mutatom be. A korpusz segítségével pontosabb képet kaptunk a nyelvvizsgaszövegekben előforduló hibák típusairól, gyakoriságairól, valamint a paneleket alkalmazó és a funkcionálisan motivált nyelvhasználat közötti különbségek okairól és természetéről.</p>
-      <p>Az elemzés során kvantitatív módszerek mellett introspektív, interjúalapú technikákat is alkalmaztunk, amelyek révén a hibák mögötti nyelvi stratégiák és döntések is értelmezhetővé váltak. A kutatást az a kérdés motiválta, hogy milyen típusú nyelvi bemenet és oktatási támogatás segítheti elő a valódi kommunikatív kompetencia fejlesztését a vizsgakörnyezeten is túlmutató nyelvhasználati kontextusokban.</p>
-    <!--
-    <p style="margin-top: 1rem"><span class="keywords">Kulcsszavak:</span>  <em>konstrukciós nyelvtan, analógiás következtetés, disztribúciós tanulás, nyelvmodellek</em></p>
-    -->
-    </div>
-    
-    <img class="hun-ren-nytk-logo" src="https://live.staticflickr.com/65535/54316718871_0fd9ccee5e_o.png" alt="HUN-REN NYTK logó">
-    <img class="elte-ik-logo" src="https://live.staticflickr.com/65535/54316718846_1f281a0326_o.png" alt="ELTE IK logó">
+
+    <!-- Header with Logo - links back to homepage -->
+    <header>
+      <a href="../index.html" aria-label="Vissza a főoldalra">
+        <img class="svg-logo" src="https://live.staticflickr.com/65535/54315829312_672db8e0ee_o.png" alt="MANYEK logó">
+      </a>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+      <!-- Event Details Section -->
+      <section class="single-schedule" aria-labelledby="event-title">
+        <article class="event-detail">
+          <div class="presenter">Bari Diána Éva (ELTE BTK, Euroexam Vizsgaközpont)</div>
+          <div id="event-title" class="title">Panelek, konstrukciók és nyelvi kompetencia német nyelvvizsgázói szövegekben</div>
+          <time class="time" datetime="2025-06-03T16:30"><span class="room">2025. </span>Június <span class="room">3. 16:30</span></time>
+          <div class="place-row place-row-primary">
+            <span class="nytk-name-full">HUN-REN Nyelvtudományi Kutatóközpont</span><span class="nytk-name-short">HUN-REN Nyelvtudományi Kutatóközpont</span>
+          </div>
+          <div class="place-row place-row-secondary">Földszinti nagyelőadó (013)</div>
+          <div class="place-row place-row-tertiary">
+            <a class="map-link" href="https://maps.app.goo.gl/yBxHQT2R15VB7mFZ7">1068 <span class="room-2">Budapest, Benczúr</span> utca 33.</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Abstract Section -->
+      <section aria-labelledby="abstract-heading">
+        <h2 id="abstract-heading" class="abstract-heading">Absztrakt</h2>
+        <div class="abstract">
+          <p>A német nyelvvizsgaszövegek értékelése során gyakran megfigyelhető, hogy a vizsgázók nyelvhasználata nagymértékben előre betanult panelekre épülő, merev mintázatokat követ. A kommunikatív célhoz illeszkedő konstrukciók önálló alkalmazása jellemzően hiányzik, amelynek következtében a nyelvi produkció alacsony szintű. Amennyiben a vizsgázók mégis eltérnek a bevett panelek használatától, a hibaszámuk érdemben megnövekszik, ami a nyelvi teljesítmény romlásához vezet, és az adott szinten elvárt nyelvi kompetencia kritériumainak nem teljesítéséhez.</p>
+
+          <p>Előadásomban egy országos lefedettségű, egységes feladatstruktúrával készült vizsgakorpusz létrehozásának és feldolgozásának tapasztalatait mutatom be. A korpusz segítségével pontosabb képet kaptunk a nyelvvizsgaszövegekben előforduló hibák típusairól, gyakoriságairól, valamint a paneleket alkalmazó és a funkcionálisan motivált nyelvhasználat közötti különbségek okairól és természetéről.</p>
+
+          <p>Az elemzés során kvantitatív módszerek mellett introspektív, interjúalapú technikákat is alkalmaztunk, amelyek révén a hibák mögötti nyelvi stratégiák és döntések is értelmezhetővé váltak. A kutatást az a kérdés motiválta, hogy milyen típusú nyelvi bemenet és oktatási támogatás segítheti elő a valódi kommunikatív kompetencia fejlesztését a vizsgakörnyezeten is túlmutató nyelvhasználati kontextusokban.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <img class="hun-ren-nytk-logo" src="https://live.staticflickr.com/65535/54869799753_45c0c06d36_c.jpg" alt="HUN-REN NYTK logó">
+      <img class="elte-ik-logo" src="https://live.staticflickr.com/65535/54316718846_1f281a0326_o.png" alt="ELTE Informatikai Kar logó">
+    </footer>
+
   </div>
 </body>
 </html>

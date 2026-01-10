@@ -1,0 +1,655 @@
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* ==========================================================================
+   CSS Custom Properties
+   ========================================================================== */
+:root {
+  /* Colors */
+  --color-text-primary: #3A3A3B;
+  --color-text-secondary: #797979;
+  --color-text-muted: #888888;
+  --color-text-faded: #696969;
+  --color-accent: #ae2a4c;
+  --color-accent-alt: #a0445c;
+  --color-link: #2f4db5;
+  --color-bg: #fcfffa;
+  --color-button-details-text: #5d5d5e;
+  --color-button-details-bg: #ecece1;
+  --color-button-details-border: #a4a39d;
+  --color-button-zoom-text: #fcfffa;
+  --color-button-zoom-bg: #a2b1cf;
+  --color-button-zoom-border: #747f95;
+
+  /* Typography */
+  --font-primary: Verdana, sans-serif;
+  --font-monospace: "Source Code Pro", monospace;
+  --font-heading: "Source Sans 3", Verdana, sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.8rem;
+  --spacing-xl: 3rem;
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  color: var(--color-text-primary);
+  line-height: 1.25em;
+  margin: 0;
+  padding: 0;
+  hyphens: manual;
+  background: var(--color-bg);
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+h2 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 550;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+p {
+  margin-top: 0.47rem;
+  margin-bottom: 0;
+}
+
+i {
+  font-size: 1rem;
+}
+
+a {
+  color: var(--color-link);
+  text-underline-offset: 1.5pt;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container p:first-child {
+  margin-top: 0;
+}
+
+/* ==========================================================================
+   Header / Logo
+   ========================================================================== */
+.svg-logo {
+  width: 225px;
+  height: 68.88px;
+  margin: var(--spacing-md) auto 0 0;
+  display: block;
+}
+
+/* ==========================================================================
+   Schedule Components
+   ========================================================================== */
+.schedule-item {
+  margin-top: 0.9rem;
+  margin-left: -0.05rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+/* Event metadata styling */
+.event-date {
+  display: block;
+}
+
+.event-location {
+  color: var(--color-text-secondary);
+  font-family: var(--font-monospace);
+  font-size: 0.97rem;
+  font-weight: 425;
+}
+
+.event-location-primary {
+  line-height: 0.95;
+  padding-bottom: 0.25rem;
+  padding-top: 0.15rem;
+}
+
+.event-location-secondary {
+  line-height: 0.95;
+  padding-bottom: 0.2rem;
+}
+
+.event-presenter {
+  margin-top: 0.1rem;
+}
+
+.event-title {
+  font-style: italic;
+  margin-top: 2pt;
+}
+
+.event-links {
+  margin-top: 4pt;
+}
+
+/* Collaboration note styling */
+.collaboration-note {
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  color: var(--color-text-faded);
+  hyphens: manual;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.event-detail .collaboration-note {
+  font-weight: normal;
+  font-size: 1rem;
+  padding-top: 2pt;
+  line-height: 1.15rem;
+  margin-bottom: -1pt;
+}
+
+/* Time and Date Styles */
+.time {
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-size: 0.95rem;
+  letter-spacing: 0.055rem;
+  font-family: var(--font-monospace);
+  font-weight: 450;
+}
+
+.old-time {
+  text-transform: uppercase;
+  color: var(--color-accent-alt);
+  font-size: 0.95rem;
+  letter-spacing: 0.055rem;
+  font-family: var(--font-monospace);
+  font-weight: 450;
+}
+
+.room {
+  word-spacing: -0.4em;
+}
+
+/* Place and Presenter Rows */
+.place-row {
+  color: var(--color-text-secondary);
+  font-family: var(--font-monospace);
+  font-size: 0.97rem;
+  font-weight: 425;
+}
+
+.title-row {
+  font-style: italic;
+}
+
+/* Location Name Variants */
+.nytud-desktop {
+  font-size: 0.95em;
+  margin-top: -0.1em;
+  color: var(--color-text-muted);
+  letter-spacing: 0.2pt;
+  font-family: var(--font-monospace);
+  font-weight: 450;
+  display: none;
+}
+
+.nytud-mobile {
+  font-size: 0.95em;
+  color: var(--color-text-muted);
+  letter-spacing: 0.2pt;
+  font-family: var(--font-monospace);
+  font-weight: 450;
+  word-spacing: -0.3em;
+  display: inline;
+}
+
+.nytk-name-full {
+  display: none;
+}
+
+.nytk-name-short {
+  display: inline;
+  word-spacing: -0.3rem;
+}
+
+.link-to-details {
+  text-align: right;
+}
+
+/* ==========================================================================
+   Buttons and Links
+   ========================================================================== */
+.link-text {
+  font-family: var(--font-monospace);
+  text-transform: lowercase;
+  font-style: normal;
+  letter-spacing: 0.01rem;
+  font-size: 0.95rem;
+  line-height: 0.95rem;
+  font-weight: normal;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.link-arrow {
+  vertical-align: 0.75pt;
+}
+
+.link-button {
+  display: inline;
+  padding: 1px 4.5px 3px 5px;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-bottom: -0.5rem;
+  font-size: 0.75rem;
+  line-height: 0.1;
+  vertical-align: 1pt;
+}
+
+.link-button.details {
+  color: var(--color-button-details-text);
+  background-color: var(--color-button-details-bg);
+  border: 1pt solid var(--color-button-details-border);
+}
+
+.link-button.zoom {
+  color: var(--color-button-zoom-text);
+  background-color: var(--color-button-zoom-bg);
+  border: 1pt solid var(--color-button-zoom-border);
+}
+
+.link-button-text {
+  font-family: "Source Sans 3";
+  text-transform: lowercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.85rem;
+  letter-spacing: 0.01rem;
+  vertical-align: -0.5pt;
+}
+
+.link-button-arrow {
+  font-family: "Source Code Pro";
+  text-transform: lowercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.85rem;
+  letter-spacing: 0.01rem;
+  vertical-align: -0.2pt;
+  word-spacing: -0.2rem;
+}
+
+/* ==========================================================================
+   Footer / Impressum
+   ========================================================================== */
+.impr-list {
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem;
+  margin-left: -0.5rem;
+}
+
+li:not(.impr-list:first-child) {
+  margin-top: 0.1rem;
+}
+
+/* Footer Logos */
+.elte-nytk-logo {
+  width: 160px;
+  height: 33px;
+  margin: var(--spacing-xl) auto 0 auto;
+  display: block;
+  opacity: 0.775;
+}
+
+.elte-ik-logo {
+  width: 185px;
+  height: 51.98px;
+  padding-right: 0.6rem;
+  margin: var(--spacing-md) auto 4rem auto;
+  display: block;
+}
+
+/* ==========================================================================
+   Event Detail Page Styles
+   ========================================================================== */
+
+/* Logo variants for event pages - only dim when inside a link (event pages) */
+a .svg-logo {
+  opacity: 0.7;
+}
+
+a .svg-logo:hover {
+  opacity: 1;
+}
+
+/* Alternative logo styles (not currently used but kept for future use) */
+.text-logo {
+  font-size: 2.3rem;
+  font-weight: normal;
+  font-family: "Trebuchet MS";
+  margin-top: 1.9rem;
+  margin-bottom: 0.1rem;
+  margin-left: 0.07rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  font-family: "Andale Mono";
+  line-height: 1rem;
+  word-spacing: -0.2rem;
+}
+
+.tracked-m {
+  letter-spacing: 0.1rem;
+}
+
+/* Old logo styles (not currently used but kept for future use) */
+.logo {
+  width: 250px;
+  height: 96.58px;
+  display: block;
+  margin: 30px auto 40px 0;
+}
+
+.top-hun-ren-nytk-logo {
+  width: 150px;
+  height: 23.7px;
+  margin: 0 auto var(--spacing-sm) 0;
+  display: inline;
+  opacity: 0.7;
+}
+
+.top-elte-ik-logo {
+  width: 125px;
+  margin: 0.2rem 0 var(--spacing-sm) auto;
+  display: inline;
+  opacity: 0.7;
+}
+
+/* Footer logo variant for event pages */
+.hun-ren-nytk-logo {
+  width: 160px;
+  height: 33px;
+  margin: var(--spacing-xl) auto 0 auto;
+  display: block;
+  opacity: 0.775;
+}
+
+/* Event detail page grid layout */
+.single-schedule {
+  margin-top: 2rem;
+  hyphens: manual;
+}
+
+.event-detail {
+  margin-top: 0.8rem;
+  margin-left: -0.05rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+/* Event detail specific typography */
+.presenter {
+  font-family: "PT Sans";
+  font-size: 1.18rem;
+  line-height: 1.1rem;
+  font-weight: bold;
+}
+
+.title {
+  font-family: "PT Sans";
+  font-size: 1.24rem;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.15;
+  padding-top: 0.2em;
+  padding-bottom: 0.6rem;
+}
+
+/* Event detail time styling - slightly different from list view */
+.event-detail .time {
+  text-transform: uppercase;
+  color: #99374d;
+  font-size: 0.95rem;
+  letter-spacing: 0.04rem;
+  font-family: var(--font-monospace);
+  font-weight: 425;
+  word-spacing: -0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+/* Event detail place row - slightly different from list view */
+.event-detail .place-row {
+  color: #515154;
+  font-family: var(--font-monospace);
+  font-size: 0.95rem;
+  font-weight: 425;
+  word-spacing: -0.1rem;
+}
+
+.event-detail .place-row-primary {
+  line-height: 0.95;
+  padding-bottom: 0.25rem;
+}
+
+.event-detail .place-row-secondary {
+  line-height: 0.95;
+  padding-bottom: 0.25rem;
+}
+
+.event-detail .place-row-tertiary {
+  line-height: 0.95;
+  padding-bottom: 0.25rem;
+}
+
+/* Room spacing variants */
+.room-2 {
+  word-spacing: -0.2em;
+}
+
+/* Map link styling */
+.map-link {
+  color: #2f4db5e6;
+}
+
+/* Abstract section styling */
+.abstract {
+  hyphens: manual;
+}
+
+.abstract-heading {
+  margin-top: 1.2rem;
+  display: flex;
+}
+
+/* Keywords styling */
+.keywords {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 550;
+  margin-top: 1.8rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.keywords-inline {
+  margin-top: var(--spacing-md);
+}
+
+/* Recommended literature section */
+.rec-literature {
+  hyphens: manual;
+}
+
+/* Inline list for keywords or references */
+.inline-list {
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem;
+  margin-left: -0.5rem;
+}
+
+li:not(.inline-list:first-child) {
+  margin-top: 0.075rem;
+}
+
+/* Indirect reference styling */
+.indir-ref {
+  color: #808080;
+}
+
+/* Subscript styling for references */
+p sub {
+  font-size: 0.75em;
+  line-height: 1;
+  vertical-align: baseline;
+  position: relative;
+  bottom: -0.2em;
+}
+
+/* Slides link styling (not currently used but kept for future use) */
+.slides-text {
+  font-family: "Source Sans 3";
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.01rem;
+}
+
+.slides-link {
+  display: inline-block;
+  margin-left: auto;
+  padding: 1.5px 5px;
+  line-height: 1.2;
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  background-color: var(--color-button-details-bg);
+  vertical-align: 0;
+  font-size: 0.75rem;
+  word-spacing: 0.1rem;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Accessibility
+   ========================================================================== */
+
+/* Skip to main content link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+  font-weight: bold;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Focus states for better keyboard navigation - only show on keyboard navigation, not mouse clicks */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.link-button:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* Ensure sufficient color contrast for links */
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1.5pt;
+  text-decoration-thickness: 0.6pt;
+}
+
+.link-button:hover {
+  filter: brightness(0.9);
+  transition: filter 0.2s ease;
+}
+
+/* Screen reader only content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  a {
+    text-decoration: underline;
+  }
+
+  .link-button {
+    border-width: 2pt;
+  }
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media (min-width: 550px) {
+  .container {
+    width: 500px;
+  }
+
+  .nytk-name-full {
+    display: inline;
+  }
+
+  .nytk-name-short {
+    display: none;
+  }
+
+  .zoom-link {
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8.5px;
+  }
+}
