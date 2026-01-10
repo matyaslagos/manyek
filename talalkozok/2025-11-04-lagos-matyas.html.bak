@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lagos Mátyás előadása a MANYEK-en: Magyar ragozott főnévi alakok produkálása analógiás szuffixumcserékkel">
+  <title>Lagos Mátyás - MANYEK</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Ugrás a tartalomra</a>
+
+  <div class="container">
+
+    <!-- Header with Logo - links back to homepage -->
+    <header>
+      <a href="../index.html" aria-label="Vissza a főoldalra">
+        <img class="svg-logo" src="https://live.staticflickr.com/65535/54315829312_672db8e0ee_o.png" alt="MANYEK logó">
+      </a>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+      <!-- Event Details Section -->
+      <section class="single-schedule" aria-labelledby="event-title">
+        <article class="event-detail">
+          <div class="presenter">Lagos Mátyás (ELTE NYTK)</div>
+          <div id="event-title" class="title">Magyar ragozott főnévi alakok produkálása analógiás szuffixumcserékkel</div>
+          <time class="time" datetime="2025-11-04T16:30"><span class="room">2025. </span>November <span class="room">4. 16:30</span></time>
+          <div class="place-row place-row-primary">
+            <span class="nytk-name-full">ELTE Nyelvtudományi Kutatóközpont</span><span class="nytk-name-short">ELTE Nyelvtudományi Kutatóközpont</span>
+          </div>
+          <div class="place-row place-row-secondary">Földszinti nagyelőadó (013)</div>
+          <div class="place-row place-row-tertiary">
+            <a class="map-link" href="https://maps.app.goo.gl/yBxHQT2R15VB7mFZ7">1068 <span class="room-2">Budapest, Benczúr</span> utca 33.</a>
+          </div>
+          <div class="event-links">
+          </div>
+        </article>
+      </section>
+
+      <!-- Abstract Section -->
+      <section aria-labelledby="abstract-heading">
+        <h2 id="abstract-heading" class="abstract-heading">Absztrakt</h2>
+        <div class="abstract">
+          <p>Az egzempláralapú morfológiai elméletek egy szóalak produkálását nem morfémák egymás után való konkatenálásaként képzelik el, hanem egzemplárok (azaz a beszélő nyelvi tapasztalatában előforduló szóalakok) közötti hasonlósági viszonyok felismeréséből adódó következtetésként. Az előadásban ennek az elképzelésnek egy részletes kidolgozásáról lesz szó: Pontosan hogyan lehet kiszámítani egy újszerű szóalakot a már hallott szóalakok közötti hasonlósági viszonyok segítségével? Megadok egy egyszerű egzempláralapú módszert a magyar főnevek ragozott alakjainak a kiszámítására, bemutatom hogy milyen esetekben működik illetve nem működik ez a módszer, és ötleteket adok arra hogy hogyan lehetne javítani rajta.</p>
+
+          <p class="keywords-inline"><span class="keywords">Kulcsszavak:</span> <em>egzemplárelmélet, morfológia, analógiás következtetés</em></p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <img class="hun-ren-nytk-logo" src="https://live.staticflickr.com/65535/54869799753_45c0c06d36_c.jpg" alt="ELTE Nyelvtudományi Kutatóközpont logó">
+      <img class="elte-ik-logo" src="https://live.staticflickr.com/65535/54316718846_1f281a0326_o.png" alt="ELTE Informatikai Kar logó">
+    </footer>
+
+  </div>
+</body>
+</html>

@@ -39,7 +39,7 @@
           </div>
           <div class="event-links">
             <a class="link-button details" href="diasorok/2025-02-25-lagos-matyas.pdf" aria-label="Diasor olvasása: Lagos Mátyás előadása">
-              <span class="link-button-text">diasor</span>
+              <span class="link-button-text">diasor</span><span class="link-button-arrow"> »</span>
             </a>
           </div>
         </article>

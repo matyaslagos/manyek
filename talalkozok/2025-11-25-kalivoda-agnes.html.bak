@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kalivoda Ágnes előadása a MANYEK-en: Beszélhetnékem van – a hirtelen késztetést kifejező -hatnék/hetnék konstrukció">
+  <title>Kalivoda Ágnes - MANYEK</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Ugrás a tartalomra</a>
+
+  <div class="container">
+
+    <!-- Header with Logo - links back to homepage -->
+    <header>
+      <a href="../index.html" aria-label="Vissza a főoldalra">
+        <img class="svg-logo" src="https://live.staticflickr.com/65535/54315829312_672db8e0ee_o.png" alt="MANYEK logó">
+      </a>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+      <!-- Event Details Section -->
+      <section class="single-schedule" aria-labelledby="event-title">
+        <article class="event-detail">
+          <div class="presenter">
+            Kalivoda Ágnes (ELTE NYTK)
+            <p class="collaboration-note">Farrell Ackermannal (University of California, San Diego) és Robert&nbsp;Malouffal (San Diego State University) közös munka</p>
+          </div>
+          <div id="event-title" class="title">Beszélhetnékem van – a hirtelen késztetést kifejező -&#8288;hatnék/hetnék konstrukció</div>
+          <time class="time" datetime="2025-11-25T16:30"><span class="room">2025. </span>November <span class="room">25. 16:30</span></time>
+          <div class="place-row place-row-primary">
+            <span class="nytk-name-full">ELTE Nyelvtudományi Kutatóközpont</span><span class="nytk-name-short">ELTE Nyelvtudományi Kutatóközpont</span>
+          </div>
+          <div class="place-row place-row-secondary">Földszinti nagyelőadó (013)</div>
+          <div class="place-row place-row-tertiary">
+            <a class="map-link" href="https://maps.app.goo.gl/yBxHQT2R15VB7mFZ7">1068 <span class="room-2">Budapest, Benczúr</span> utca 33.</a>
+          </div>
+          <div class="event-links">
+          </div>
+        </article>
+      </section>
+
+      <!-- Abstract Section -->
+      <section aria-labelledby="abstract-heading">
+        <h2 id="abstract-heading" class="abstract-heading">Absztrakt</h2>
+        <div class="abstract" lang="hu">
+          <p>Az igékhez járuló <em>-&#8288;hatnék/hetnék</em> képző azt fejezi ki, hogy az alany valamilyen cselekvésre hirtelen késztetést érez, pl. <em>alhatnékja van</em>, <em>rájön a sírhatnék</em>. Az így képzett szavak főnévként viselkednek: kaphatnak esetragot (pl. <em>pukkadozik a nevethethnéktől</em>), birtokos személyjelet (pl. <em>sírhatnékom támadt</em>), és további szóképzés bemenetei is lehetnek (pl. <em>mászhatnékos kölyökmackó</em>). A 'hirtelen késztetés' jelentés tehát az [[X]<sub>IGE</sub> <em>hatnék/hetnék</em>]<sub>FŐNÉV</sub> formával asszociálódva alkot konstrukciót.</p>
+
+          <p>Az előadásban először mai magyar korpuszadatok alapján mutatjuk be a <em>-&#8288;hatnék/hetnék</em> konstrukció jellegzetességeit. Két kollostrukciós vizsgálat eredményét ismertetjük: az egyik azokat az igéket mutatja ki, amelyekhez a <em>-&#8288;hatnék/hetnék</em> képző a legtipikusabban járul, a másik azokat az igéket, amelyek az így létrejött főnévvel jellemzően együtt állnak.</p>
+
+          <p>Az előadás második felében a konstrukció kialakulásának útját próbáljuk meg feltárni történeti korpuszok és korabeli nyelvészeti munkák, szótárak alapján. A nyelvi változás során három igei toldalék (<em>-&#8288;hat/het</em>, <em>-&#8288;n</em>, <em>-&#8288;ék</em>) szilárdult egyetlen képzővé, azonban ennek a folyamatnak a pontos rekonstruálását nagyon megnehezíti az adathiány.</p>
+
+          <p>Végül kiemelünk néhány alig kutatott részletet. Például mi az az <em>úrhatnám</em>, és miben tér el a bemutatott <em>-&#8288;hatnék/hetnék</em> konstrukciótól?</p>
+
+          <p class="keywords-inline"><span class="keywords">Kulcsszavak:</span> <em>-hatnék/hetnék, kollostrukciós elemzés, nyelvi változás, történeti korpuszok</em></p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <img class="hun-ren-nytk-logo" src="https://live.staticflickr.com/65535/54869799753_45c0c06d36_c.jpg" alt="ELTE Nyelvtudományi Kutatóközpont logó">
+      <img class="elte-ik-logo" src="https://live.staticflickr.com/65535/54316718846_1f281a0326_o.png" alt="ELTE Informatikai Kar logó">
+    </footer>
+
+  </div>
+</body>
+</html>

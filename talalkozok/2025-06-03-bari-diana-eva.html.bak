@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bari Diána Éva előadása a MANYEK-en: Panelek, konstrukciók és nyelvi kompetencia német nyelvvizsgázói szövegekben">
+  <title>Bari Diána Éva - MANYEK</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Ugrás a tartalomra</a>
+
+  <div class="container">
+
+    <!-- Header with Logo - links back to homepage -->
+    <header>
+      <a href="../index.html" aria-label="Vissza a főoldalra">
+        <img class="svg-logo" src="https://live.staticflickr.com/65535/54315829312_672db8e0ee_o.png" alt="MANYEK logó">
+      </a>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+      <!-- Event Details Section -->
+      <section class="single-schedule" aria-labelledby="event-title">
+        <article class="event-detail">
+          <div class="presenter">Bari Diána Éva (ELTE BTK, Euroexam Vizsgaközpont)</div>
+          <div id="event-title" class="title">Panelek, konstrukciók és nyelvi kompetencia német nyelvvizsgázói szövegekben</div>
+          <time class="time" datetime="2025-06-03T16:30"><span class="room">2025. </span>Június <span class="room">3. 16:30</span></time>
+          <div class="place-row place-row-primary">
+            <span class="nytk-name-full">HUN-REN Nyelvtudományi Kutatóközpont</span><span class="nytk-name-short">HUN-REN Nyelvtudományi Kutatóközpont</span>
+          </div>
+          <div class="place-row place-row-secondary">Földszinti nagyelőadó (013)</div>
+          <div class="place-row place-row-tertiary">
+            <a class="map-link" href="https://maps.app.goo.gl/yBxHQT2R15VB7mFZ7">1068 <span class="room-2">Budapest, Benczúr</span> utca 33.</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Abstract Section -->
+      <section aria-labelledby="abstract-heading">
+        <h2 id="abstract-heading" class="abstract-heading">Absztrakt</h2>
+        <div class="abstract">
+          <p>A német nyelvvizsgaszövegek értékelése során gyakran megfigyelhető, hogy a vizsgázók nyelvhasználata nagymértékben előre betanult panelekre épülő, merev mintázatokat követ. A kommunikatív célhoz illeszkedő konstrukciók önálló alkalmazása jellemzően hiányzik, amelynek következtében a nyelvi produkció alacsony szintű. Amennyiben a vizsgázók mégis eltérnek a bevett panelek használatától, a hibaszámuk érdemben megnövekszik, ami a nyelvi teljesítmény romlásához vezet, és az adott szinten elvárt nyelvi kompetencia kritériumainak nem teljesítéséhez.</p>
+
+          <p>Előadásomban egy országos lefedettségű, egységes feladatstruktúrával készült vizsgakorpusz létrehozásának és feldolgozásának tapasztalatait mutatom be. A korpusz segítségével pontosabb képet kaptunk a nyelvvizsgaszövegekben előforduló hibák típusairól, gyakoriságairól, valamint a paneleket alkalmazó és a funkcionálisan motivált nyelvhasználat közötti különbségek okairól és természetéről.</p>
+
+          <p>Az elemzés során kvantitatív módszerek mellett introspektív, interjúalapú technikákat is alkalmaztunk, amelyek révén a hibák mögötti nyelvi stratégiák és döntések is értelmezhetővé váltak. A kutatást az a kérdés motiválta, hogy milyen típusú nyelvi bemenet és oktatási támogatás segítheti elő a valódi kommunikatív kompetencia fejlesztését a vizsgakörnyezeten is túlmutató nyelvhasználati kontextusokban.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <img class="hun-ren-nytk-logo" src="https://live.staticflickr.com/65535/54869799753_45c0c06d36_c.jpg" alt="HUN-REN NYTK logó">
+      <img class="elte-ik-logo" src="https://live.staticflickr.com/65535/54316718846_1f281a0326_o.png" alt="ELTE Informatikai Kar logó">
+    </footer>
+
+  </div>
+</body>
+</html>

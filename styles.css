@@ -250,10 +250,10 @@ a {
 }
 
 .link-arrow {
-  vertical-align: 0.75pt;
+  vertical-align: 20pt;
 }
 
-.link-button {
+.link-button2 {
   display: inline;
   padding: 0.75pt 4pt 2.25pt 4pt;
   border-radius: 3px;
@@ -264,13 +264,26 @@ a {
   vertical-align: 1pt;
 }
 
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.75rem;
+  line-height: 1;
+  vertical-align: middle;
+}
+
 .link-button.details {
+  padding: 0.15rem 0.36rem 0.15rem 0.3rem;
   color: var(--color-button-details-text);
   background-color: var(--color-button-details-bg);
   border: 1pt solid var(--color-button-details-border);
 }
 
 .link-button.zoom {
+  padding: 0.15rem 0.3rem 0.15rem 0.3rem;
   color: var(--color-button-zoom-text);
   background-color: var(--color-button-zoom-bg);
   border: 1pt solid var(--color-button-zoom-border);

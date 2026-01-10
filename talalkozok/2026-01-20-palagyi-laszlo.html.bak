@@ -39,7 +39,7 @@
           </div>
           <div class="event-links">
             <a class="link-button zoom" href="https://us06web.zoom.us/j/85250575838?pwd=M21okObuBY0UjWZgED4b18ms2O4JXr.1" aria-label="Csatlakozás Zoom-on">
-              <span class="link-button-text">zoom</span>
+              <span class="link-button-text">zoom</span><span class="link-button-arrow"> »</span>
             </a>
           </div>
         </article>
