@@ -255,7 +255,7 @@ a {
 
 .link-button {
   display: inline;
-  padding: 1px 4.5px 3px 5px;
+  padding: 0.75pt 4pt 2.25pt 4pt;
   border-radius: 3px;
   text-decoration: none;
   margin-bottom: -0.5rem;
