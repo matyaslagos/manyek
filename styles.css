@@ -595,7 +595,7 @@ button:focus-visible {
 }
 
 /* Ensure sufficient color contrast for links */
-a:hover {
+.link-button:hover .link-button-word {
   text-decoration: underline;
   text-underline-offset: 1.5pt;
   text-decoration-thickness: 0.6pt;
