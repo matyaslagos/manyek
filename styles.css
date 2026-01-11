@@ -275,14 +275,14 @@ a {
 }
 
 .link-button.details {
-  padding: 0rem 0.3rem 0rem 0.3rem;
+  padding: 0rem 0.3rem 0rem 0.33rem;
   color: var(--color-button-details-text);
   background-color: var(--color-button-details-bg);
   border: 1pt solid var(--color-button-details-border);
 }
 
 .link-button.zoom {
-  padding: 0rem 0.3rem 0rem 0.3rem;
+  padding: 0rem 0.3rem 0rem 0.33rem;
   color: var(--color-button-zoom-text);
   background-color: var(--color-button-zoom-bg);
   border: 1pt solid var(--color-button-zoom-border);
