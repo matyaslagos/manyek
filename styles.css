@@ -426,6 +426,11 @@ a .svg-logo:hover {
   font-weight: bold;
 }
 
+.presenter.multi {
+  line-height: 1.4rem;
+  margin-bottom: -0.2rem;
+}
+
 .title {
   font-family: "PT Sans";
   font-size: 1.24rem;
