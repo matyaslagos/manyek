@@ -128,7 +128,7 @@ a {
 
 .event-location-primary {
   line-height: 0.9;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.3rem;
   padding-top: 0.1rem;
 }
 
@@ -224,13 +224,6 @@ a {
   display: inline;
 }
 
-.nytk-name-full {
-  display: inline;
-}
-
-.nytk-name-short {
-  display: none;
-}
 
 .link-to-details {
   text-align: right;
@@ -684,13 +677,6 @@ button:focus-visible {
     width: 500px;
   }
 
-  .nytk-name-full {
-    display: inline;
-  }
-
-  .nytk-name-short {
-    display: none;
-  }
 
   .zoom-link {
     display: inline-block;
