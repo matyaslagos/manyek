@@ -12,21 +12,11 @@
   /* Colors */
   --color-text-primary: #3A3A3B;
   --color-text-secondary: #797979;
-  --color-text-muted: #888888;
   --color-text-faded: #696969;
   --color-accent: #ae2a4c;
   --color-accent-alt: #a0445c;
   --color-link: #2f4db5;
   --color-bg: #fcfffa;
-  --color-button-details-text: #5d5d5e;
-  --color-button-details-bg: #ecece1;
-  --color-button-details-border: #a4a39d;
-  --color-button-zoom-text: #fcfffa;
-  --color-button-zoom-bg: #a2b1cf;
-  --color-button-zoom-border: #747f95;
-  --color-button-pagination-text: #f0f0ea;
-  --color-button-pagination-bg: #7e7e82;
-  --color-button-pagination-border: #5e5e61;
 
   /* Typography */
   --font-primary: Verdana, sans-serif;
@@ -34,7 +24,6 @@
   --font-heading: "Source Sans 3", Verdana, sans-serif;
 
   /* Spacing */
-  --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 1.8rem;
@@ -101,6 +90,15 @@ a {
   height: 68.88px;
   margin: var(--spacing-md) auto 0 0;
   display: block;
+}
+
+/* Logo variants for event pages - only dim when inside a link (event pages) */
+a .svg-logo {
+  opacity: 0.7;
+}
+
+a .svg-logo:hover {
+  opacity: 1;
 }
 
 /* ==========================================================================
@@ -191,123 +189,12 @@ a {
   word-spacing: -0.4em;
 }
 
-/* Place and Presenter Rows */
+/* Place Rows */
 .place-row {
   color: var(--color-text-secondary);
   font-family: var(--font-monospace);
   font-size: 0.9rem;
   font-weight: 425;
-}
-
-.title-row {
-  font-style: italic;
-}
-
-/* Location Name Variants */
-.nytud-desktop {
-  font-size: 0.9em;
-  margin-top: -0.1em;
-  color: var(--color-text-muted);
-  letter-spacing: 0.2pt;
-  font-family: var(--font-monospace);
-  font-weight: 450;
-  display: none;
-}
-
-.nytud-mobile {
-  font-size: 0.9em;
-  color: var(--color-text-muted);
-  letter-spacing: 0.2pt;
-  font-family: var(--font-monospace);
-  font-weight: 450;
-  word-spacing: -0.3em;
-  display: inline;
-}
-
-
-.link-to-details {
-  text-align: right;
-}
-
-/* ==========================================================================
-   Buttons and Links
-   ========================================================================== */
-.link-text {
-  font-family: var(--font-monospace);
-  text-transform: lowercase;
-  font-style: normal;
-  letter-spacing: 0.01rem;
-  font-size: 0.95rem;
-  line-height: 0.95rem;
-  font-weight: normal;
-  color: var(--color-accent);
-  text-decoration: none;
-}
-
-.link-arrow {
-  vertical-align: 20pt;
-}
-
-.link-button2 {
-  display: inline;
-  padding: 0.75pt 4pt 2.25pt 4pt;
-  border-radius: 3px;
-  text-decoration: none;
-  margin-bottom: -0.5rem;
-  font-size: 0.75rem;
-  line-height: 0.1;
-  vertical-align: 1pt;
-}
-
-.link-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 3px;
-  text-decoration: none;
-  font-size: 0rem;
-  vertical-align: middle;
-}
-
-.link-button.details {
-  padding: 0rem 0.3rem 0rem 0.33rem;
-  color: var(--color-button-details-text);
-  background-color: var(--color-button-details-bg);
-  border: 1pt solid var(--color-button-details-border);
-}
-
-.link-button.zoom {
-  padding: 0rem 0.3rem 0rem 0.33rem;
-  color: var(--color-button-zoom-text);
-  background-color: var(--color-button-zoom-bg);
-  border: 1pt solid var(--color-button-zoom-border);
-}
-
-.link-button.pagination {
-  padding: 0.08rem 0.6rem;
-  border-radius: 1rem;
-  color: var(--color-button-pagination-text);
-  background-color: var(--color-button-pagination-bg);
-  border: 1pt solid var(--color-button-pagination-border);
-}
-
-.link-button-text {
-  font-family: "Source Sans 3";
-  text-transform: lowercase;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.85rem;
-  letter-spacing: 0.01rem;
-  vertical-align: 0pt;
-}
-
-.link-button-arrow {
-  font-family: "Source Code Pro";
-  text-transform: lowercase;
-  font-style: normal;
-  font-weight: 450;
-  font-size: 0.85rem;
-  line-height: 1.2rem;
 }
 
 /* ==========================================================================
@@ -343,59 +230,6 @@ li:not(.impr-list:first-child) {
 /* ==========================================================================
    Event Detail Page Styles
    ========================================================================== */
-
-/* Logo variants for event pages - only dim when inside a link (event pages) */
-a .svg-logo {
-  opacity: 0.7;
-}
-
-a .svg-logo:hover {
-  opacity: 1;
-}
-
-/* Alternative logo styles (not currently used but kept for future use) */
-.text-logo {
-  font-size: 2.3rem;
-  font-weight: normal;
-  font-family: "Trebuchet MS";
-  margin-top: 1.9rem;
-  margin-bottom: 0.1rem;
-  margin-left: 0.07rem;
-}
-
-.subtitle {
-  font-size: 0.9rem;
-  font-family: "Andale Mono";
-  line-height: 1rem;
-  word-spacing: -0.2rem;
-}
-
-.tracked-m {
-  letter-spacing: 0.1rem;
-}
-
-/* Old logo styles (not currently used but kept for future use) */
-.logo {
-  width: 250px;
-  height: 96.58px;
-  display: block;
-  margin: 30px auto 40px 0;
-}
-
-.top-hun-ren-nytk-logo {
-  width: 150px;
-  height: 23.7px;
-  margin: 0 auto var(--spacing-sm) 0;
-  display: inline;
-  opacity: 0.7;
-}
-
-.top-elte-ik-logo {
-  width: 125px;
-  margin: 0.2rem 0 var(--spacing-sm) auto;
-  display: inline;
-  opacity: 0.7;
-}
 
 /* Footer logo variant for event pages */
 .hun-ren-nytk-logo {
@@ -480,11 +314,6 @@ a .svg-logo:hover {
   padding-bottom: 0.25rem;
 }
 
-/* Room spacing variants */
-.room-2 {
-  word-spacing: -0.2em;
-}
-
 /* Map link styling */
 .map-link {
   color: #2f4db5e6;
@@ -519,17 +348,6 @@ a .svg-logo:hover {
   hyphens: manual;
 }
 
-/* Inline list for keywords or references */
-.inline-list {
-  margin-top: 0.15rem;
-  margin-bottom: 0.15rem;
-  margin-left: -0.5rem;
-}
-
-li:not(.inline-list:first-child) {
-  margin-top: 0.075rem;
-}
-
 /* Indirect reference styling */
 .indir-ref {
   color: #808080;
@@ -544,29 +362,23 @@ p sub {
   bottom: -0.2em;
 }
 
-/* Slides link styling (not currently used but kept for future use) */
-.slides-text {
-  font-family: "Source Sans 3";
-  text-transform: lowercase;
-  font-weight: 400;
-  font-size: 0.9rem;
-  letter-spacing: 0.01rem;
+/* ==========================================================================
+   SVG Buttons
+   ========================================================================== */
+.svg-button {
+  display: inline-block;
+  text-decoration: none;
 }
 
-.slides-link {
-  display: inline-block;
-  margin-left: auto;
-  padding: 1.5px 5px;
-  line-height: 1.2;
-  border-radius: 3px;
-  text-decoration: none;
-  color: var(--color-text-primary);
-  background-color: var(--color-button-details-bg);
-  vertical-align: 0;
-  font-size: 0.75rem;
-  word-spacing: 0.1rem;
-  text-align: right;
-  margin-bottom: 0;
+.svg-button svg {
+  height: 1.25rem;
+  width: auto;
+  display: block;
+}
+
+.svg-button:hover {
+  filter: brightness(0.9);
+  transition: filter 0.2s ease;
 }
 
 /* ==========================================================================
@@ -590,51 +402,11 @@ p sub {
   top: 0;
 }
 
-/* Focus states for better keyboard navigation - only show on keyboard navigation, not mouse clicks */
+/* Focus states for better keyboard navigation */
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
-}
-
-.link-button:focus-visible {
-  outline: 3px solid var(--color-accent);
-  outline-offset: 3px;
-}
-
-/* Ensure sufficient color contrast for links */
-.link-button:hover .link-button-word {
-  text-decoration: underline;
-  text-underline-offset: 1.5pt;
-  text-decoration-thickness: 0.6pt;
-}
-
-.link-button:hover {
-  filter: brightness(0.9);
-  transition: filter 0.2s ease;
-}
-
-.svg-button {
-  display: inline-block;
-  text-decoration: none;
-}
-
-.svg-button:hover {
-  filter: brightness(0.9);
-  transition: filter 0.2s ease;
-}
-
-/* Screen reader only content */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
 }
 
 /* Respect user's motion preferences */
@@ -654,19 +426,6 @@ button:focus-visible {
   a {
     text-decoration: underline;
   }
-
-  .link-button {
-    border-width: 2pt;
-  }
-}
-
-/* ==========================================================================
-   Pagination Navigation
-   ========================================================================== */
-.pagination-nav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1.5rem;
 }
 
 /* ==========================================================================
@@ -675,12 +434,5 @@ button:focus-visible {
 @media (min-width: 550px) {
   .container {
     width: 500px;
-  }
-
-
-  .zoom-link {
-    display: inline-block;
-    padding-top: 8px;
-    padding-bottom: 8.5px;
   }
 }
