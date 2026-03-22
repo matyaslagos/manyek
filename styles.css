@@ -106,7 +106,7 @@ a .svg-logo:hover {
    ========================================================================== */
 .schedule-item {
   margin-top: 0.9rem;
-  margin-left: -0.05rem;
+  margin-left: 0.05rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 0;
@@ -370,11 +370,6 @@ p sub {
   text-decoration: none;
 }
 
-.svg-button svg {
-  height: 1.25rem;
-  width: auto;
-  display: block;
-}
 
 .svg-button:hover {
   filter: brightness(0.9);
