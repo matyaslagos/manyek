@@ -132,7 +132,7 @@ a .svg-logo:hover {
 
 .event-location-secondary {
   line-height: 0.9;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.3rem;
 }
 
 .event-presenter {
@@ -261,6 +261,7 @@ li:not(.impr-list:first-child) {
   font-size: 1.1rem; /* 1.18rem */
   line-height: 1.1rem;
   font-weight: bold;
+  color: #4d4d4f;
 }
 
 .presenter.multi {
