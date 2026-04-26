@@ -142,6 +142,7 @@ a .svg-logo:hover {
 .event-title {
   font-style: italic;
   margin-top: 2pt;
+  font-size: 1.005rem;
 }
 
 .event-links {
